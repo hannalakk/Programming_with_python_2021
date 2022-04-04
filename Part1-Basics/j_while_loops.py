@@ -28,6 +28,6 @@ print('Check numbers lower than ' + str(condition))
 i = 0
 while i < condition:
     print('i = ' + str(i) + ' is lower than ' + str(condition))
-    i += 1
+    i += 2
 else:
     print("i is no longer less than " + str(condition))

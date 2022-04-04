@@ -23,15 +23,16 @@
 
 # declaring a value for a variable, in this case an Integer
 print("my_data is")
-my_data = 10
+my_data = 5
 print(my_data, '\n')
+# \n creates empty line below
 
 print("it can change to another value like")
 my_data = 10
 print(my_data, '\n')
 
 # using type() function, we can see the data type of a variable
-print("it's data type is")
+print("its data type is")
 data_type = type(my_data)
 print(data_type, '\n')
 

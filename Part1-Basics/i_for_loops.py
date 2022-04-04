@@ -25,11 +25,12 @@
 print('Lets print a series of numbers')
 
 
+
 for i in range(10):
     print(i)
 
 print('................................')
-print('You can also use the counter vaule as part of internal functions')
+print('You can also use the counter value as part of internal functions')
 text = 'This is iteration number: '
 for i in range(11, 20, 3):
     print(text + str(i))
@@ -37,10 +38,11 @@ print('range(start_val, end_val, steps)')
 
 print('................................')
 print('You can also create some shapes: ')
-text = '@'
-character = '@'
-for i in range(1, 10):
+text = ''
+character = '[-]'
+for i in range(5, 10):
     text += character
+    # same as text = text + character
     print(text)
 
 
@@ -55,10 +57,10 @@ for i in range(1, 10):
 
 
 # Now combined with conditionals
-reference_number = 3
+reference_number = 10
 text = ' can be divided into '
 print('................................')
-print('This are numbers which can be divided into ' + str(reference_number))
+print('These are numbers which can be divided into ' + str(reference_number))
 for i in range(1, 100):
     residual = i % reference_number
     # print('Residual value of dividing ' + str(i) + ' / ' + str(reference_number) + ' = ' + str(residual))
@@ -67,3 +69,14 @@ for i in range(1, 100):
 
 
 # Try to print prime numbers smaller than 100
+text = ' is a prime number below 100 '
+print('................................')
+print('These are prime numbers below 100 ')
+for j in range(0, 100):
+    if j > 1:
+        for i in range(2, j):
+            if (j % i) == 0:
+                break
+        else:
+            print(str(j) + text)
+

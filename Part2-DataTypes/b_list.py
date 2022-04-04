@@ -39,8 +39,10 @@ print(len_list, '\n')
 
 print("indexing or slicing in a list")
 first_item = my_list[0]
+#if the square brackets are right behind my_list text, we are indexing (what is the value assigned at that index)
 last_item = my_list[-1]
 sub_list = my_list[0:2]
+#elements from index 0 to index 2
 print(first_item)
 print(type(first_item))
 print(last_item)
